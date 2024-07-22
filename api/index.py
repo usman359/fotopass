@@ -95,6 +95,10 @@ def check_mouth_openness(shape):
 def home():
     return "Flask Vercel Example - Hello World", 200
 
+@app.errorhandler(404)
+def page_not_found(e):
+    return jsonify({"status": 404, "message": "Not Found"}), 404
+
 @app.route('/upload', methods=['POST'])
 def upload_file():
     if 'file' not in request.files:
