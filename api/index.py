@@ -18,7 +18,7 @@ import os
 import cv2
 import dlib
 import math
-from flask import Flask, request, jsonify, send_from_directory, send_file
+from flask import Flask, request, jsonify, send_file
 
 app = Flask(__name__)
 app.config['UPLOAD_FOLDER'] = 'uploads'
