@@ -90,6 +90,10 @@ def check_mouth_openness(shape):
         return "Mouth is open."
     else:
         return "Mouth is closed."
+    
+@app.route("/")
+def home():
+    return "Flask Vercel Example - Hello World", 200
 
 @app.route('/upload', methods=['POST'])
 def upload_file():
