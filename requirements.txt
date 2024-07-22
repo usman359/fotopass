@@ -1,4 +1,1 @@
 flask
-opencv-python
-dlib
-numpy
